@@ -11,19 +11,15 @@ const app = express();
 require("./config")(app);
 
 const projectName = "Proyecto-modelo";
-const capitalized = (string) => string[0].toUpperCase() + string.slice(1).toLowerCase();
+const capitalized = (string) =>
+  string[0].toUpperCase() + string.slice(1).toLowerCase();
 
+app.locals.title = "LAS MEJORES CANCIONES DE LA HISTORIA";
 
+app.locals.subtitle =
+  "Elige tus canciones favoritas de las 20 mejores canciones de la historia";
 
-
-
-app.locals.title = `${capitalized(projectName)} created with IronLauncher`;
-
-app.locals.subtitle = "I'am the subtitle"
-
-
-
-require("./routes/index")(app)
+require("./routes/index")(app);
 
 // const index = require("./routes/index");
 // app.use("/", index);

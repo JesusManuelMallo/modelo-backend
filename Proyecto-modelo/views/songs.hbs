@@ -1,0 +1,18 @@
+{{#each song}}
+  <div>
+
+    <img src={{img}} alt="imagen" />
+    <p> {{name}}</p>
+
+    <form action="/add-favorite" method="POST">
+
+      <input type="hidden" name="name" value={{name}} />
+
+      <input type="hidden" name="img" value={{img}} />
+
+      <button type="submit">Añadir a favoritos</button>
+    </form>
+
+  </div>
+
+{{/each}}

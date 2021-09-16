@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(./../images/fondo2.jpg);
 }
 
 a {
@@ -8,9 +9,44 @@ a {
 }
 
 h1 {
-  color: 15px;
+  color: 183, 44%, 76%;
+  background-color: lightblue;
+  width: 100%;
 }
 
-.error{
+.bienvenida {
+  width: 100%;
+}
+
+.error {
   color: red;
+}
+
+.titulo {
+  background-color: 199, 88%, 46%;
+  width: fit-content;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+}
+
+.subtitulo {
+  font-size: 40px;
+  background-color: 199, 62%, 66%;
+
+  height: 290px;
+  width: 100%;
+  font-family: monospace;
+  font-size: 40px;
+}
+
+.centertitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.marquee {
+  color: blue;
+  font-size: 40px;
 }

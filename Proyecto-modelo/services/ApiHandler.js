@@ -1,16 +1,14 @@
 // service/index.js
-const axios = require('axios');
+const axios = require("axios");
 
-class CharactersApi {
+class SongsApi {
   constructor() {
     this.api = axios.create({
-      baseURL: 'https://rickandmortyapi.com/api'
+      baseURL: "https://openwhyd.org",
     });
   }
 
-  getAllCharacters = () => this.api.get('/character');
-
+  getAdrienSongs = () => this.api.get("/adrien?format=json");
 }
 
-
-module.exports = CharactersApi;
+module.exports = SongsApi;
